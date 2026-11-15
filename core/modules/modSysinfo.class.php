@@ -91,7 +91,7 @@ class modSysinfo extends DolibarrModules
 		$this->editor_squarred_logo = '';					// Must be image filename into the module/img directory followed with @modulename. Example: 'myimage.png@sysinfo'
 
 		// Possible values for version are: 'development', 'experimental', 'dolibarr', 'dolibarr_deprecated', 'experimental_deprecated' or a version string like 'x.y.z'
-		$this->version = '1.0';
+		$this->version = '1.0.0';
 		// Url to the file with your last numberversion of this module
 		//$this->url_last_version = 'http://www.example.com/versionmodule.txt';
 
@@ -102,7 +102,7 @@ class modSysinfo extends DolibarrModules
 		// If file is in theme/yourtheme/img directory under name object_pictovalue.png, use this->picto='pictovalue'
 		// If file is in module/img directory under name object_pictovalue.png, use this->picto='pictovalue@module'
 		// To use a supported fa-xxx css style of font awesome, use this->picto='xxx'
-		$this->picto = 'file-circle-question';
+		$this->picto = '	fa-laptop-medical infobox-ticket';
 
 		// Define some features supported by module (triggers, login, substitutions, menus, css, etc...)
 		// If your module use the parameter "core_enabled" and you would like to activate the parts in all entities (Multicompany):
