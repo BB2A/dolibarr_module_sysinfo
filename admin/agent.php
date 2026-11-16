@@ -59,9 +59,13 @@ if ($action == 'set') {
 	setEventMessage('Options enregistrees');
 }
 
-llxHeader('', 'Sysinfo - Configuration');
+llxHeader('', 'Sysinfo - Configuration', '', '', 0, 0, '', '', '', 'mod-sysinfo page-admin_agent');
 
 print load_fiche_titre('Configuration du module Sysinfo', '', 'globe');
+
+// Configuration header
+$head = sysinfoAdminPrepareHead();
+print dol_get_fiche_head($head, 'agent', 'Sysinfo - Configuration', 0, 'sysinfo@sysinfo');
 
 // Security warning when HTTP is allowed.
 if (getDolGlobalString('SYSINFO_ALLOW_HTTP')) {
@@ -89,6 +93,8 @@ print '<input type="submit" class="button" value="Enregistrer">';
 print '</form>';
 
 print '<p class="opacitymedium">Les endpoints de l\'agent (POST rapport, enrôlement) refusent le HTTP non chiffre avec l\'erreur 426 tant que cette option n\'est pas cochee. Cette option ne doit etre activee que pour des tests, jamais en production.</p>';
+
+print dol_get_fiche_end();
 
 llxFooter();
 $db->close();
