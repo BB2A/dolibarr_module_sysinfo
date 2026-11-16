@@ -30,6 +30,13 @@ SysinfoAbout = About Sysinfo
 SysinfoAboutPage = Sysinfo about page
 
 #
+# Changelog page
+#
+Changelog = Changelog
+SysinfoChangelog = Changelog Sysinfo
+SysinfoChangelogPage = Sysinfo changelog page
+
+#
 # Sample page
 #
 SysinfoArea = Home Sysinfo

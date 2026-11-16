@@ -45,6 +45,11 @@ function sysinfoAdminPrepareHead()
 	$head[$h][2] = 'settings';
 	$h++;
 
+	$head[$h][0] = dolBuildUrl(dol_buildpath("/sysinfo/admin/agent.php", 1));
+	$head[$h][1] = $langs->trans("SysinfoAgentSetup");
+	$head[$h][2] = 'agent';
+	$h++;
+
 	/*
 	$head[$h][0] = dolBuildUrl(dol_buildpath("/sysinfo/admin/sysinforeport_extrafields.php", 1));
 	$head[$h][1] = $langs->trans("ExtraFields");
@@ -68,6 +73,11 @@ function sysinfoAdminPrepareHead()
 	$head[$h][0] = dolBuildUrl(dol_buildpath("/sysinfo/admin/about.php", 1));
 	$head[$h][1] = $langs->trans("About");
 	$head[$h][2] = 'about';
+	$h++;
+
+	$head[$h][0] = dolBuildUrl(dol_buildpath("/sysinfo/admin/changelog.php", 1));
+	$head[$h][1] = $langs->trans("Changelog");
+	$head[$h][2] = 'changelog';
 	$h++;
 
 	// Show more tabs from modules
